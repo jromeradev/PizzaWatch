@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="612" y="420"/>
         </scene>
-        <!--Main Controller-->
+        <!--main-->
         <scene sceneID="ifa-hT-AG3">
             <objects>
-                <controller id="rBK-m0-JUq" customClass="MainController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="main" id="rBK-m0-JUq" customClass="MainController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Pizzeria Coursera" id="U74-VV-GqZ"/>
                         <imageView width="136" height="99" alignment="left" image="Pizza-24" id="sWI-gy-WNs"/>
@@ -124,9 +124,14 @@
                             </items>
                         </group>
                         <label width="132.5" alignment="left" text="Label" numberOfLines="5" id="1zi-6E-j3p"/>
-                        <button width="1" height="20.5" alignment="left" title="Confirmar" id="Clu-2y-qtF">
+                        <button width="134" height="20.5" alignment="left" title="Confirmar" id="Clu-2y-qtF">
                             <connections>
                                 <segue destination="UQu-f9-b9M" kind="push" id="WBN-zF-3Tu"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="20.5" alignment="left" title="Cancelar" id="4l7-Dv-ucy">
+                            <connections>
+                                <action selector="cancelar" destination="Chs-jX-PQM" id="YDW-8Q-5dx"/>
                             </connections>
                         </button>
                     </items>
@@ -138,7 +143,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="133" y="692.5"/>
+            <point key="canvasLocation" x="133" y="684"/>
         </scene>
         <!--ingredientes-->
         <scene sceneID="tSs-OO-Bj3">
@@ -203,7 +208,7 @@
                         <label width="136" alignment="left" text="Confirmado" textAlignment="center" id="vYm-6M-hcq"/>
                         <button width="1" alignment="center" verticalAlignment="center" title="Volver" id="wdn-oH-xTe">
                             <connections>
-                                <segue destination="rBK-m0-JUq" kind="push" id="XUK-JR-Pzs"/>
+                                <action selector="volver" destination="UQu-f9-b9M" id="3bK-rc-Azo"/>
                             </connections>
                         </button>
                     </items>

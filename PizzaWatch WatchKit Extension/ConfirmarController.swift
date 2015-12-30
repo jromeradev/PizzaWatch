@@ -41,4 +41,7 @@ class ConfirmarController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func cancelar() {
+        pushControllerWithName("main", context: nil)
+    }
 }

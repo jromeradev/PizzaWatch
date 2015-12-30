@@ -27,4 +27,8 @@ class VolverController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func volver() {
+        pushControllerWithName("main", context: nil)
+    }
+    
 }
