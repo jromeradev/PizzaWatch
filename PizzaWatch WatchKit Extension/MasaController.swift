@@ -29,6 +29,7 @@ class MasaController: WKInterfaceController {
         }
         masaPizza.setItems(elemPicker)
         pedido = context as? Pedido
+        pedido?.masa = infoList[0].1
         // Configure interface objects here.
     }
     
@@ -47,6 +48,6 @@ class MasaController: WKInterfaceController {
     }
     
     @IBAction func queso() {
-        pushControllerWithName("pedido", context: pedido)
+        pushControllerWithName("queso", context: pedido)
     }
 }

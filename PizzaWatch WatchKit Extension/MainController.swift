@@ -29,6 +29,6 @@ class MainController: WKInterfaceController {
     
     @IBAction func IniciarPedido() {
         let pedido:Pedido=Pedido()
-        pushControllerWithName("pedido", context: pedido)
+        pushControllerWithName("tam", context: pedido)
     }
 }

@@ -27,6 +27,7 @@ class TamController: WKInterfaceController {
         }
         tamPizza.setItems(tamPicker)
         pedido = context as? Pedido
+        pedido?.size = tamList[0].1
         // Configure interface objects here.
     }
 
@@ -46,6 +47,6 @@ class TamController: WKInterfaceController {
     }
 
     @IBAction func masa() {
-         pushControllerWithName("pedido", context: pedido)
+         pushControllerWithName("masa", context: pedido)
     }
 }

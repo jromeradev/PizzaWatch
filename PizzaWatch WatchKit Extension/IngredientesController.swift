@@ -127,7 +127,7 @@ class IngredientesController: WKInterfaceController {
             
             self.presentAlertControllerWithTitle("Alert", message: "Es necesario seleccionar un ingrediente", preferredStyle: WKAlertControllerStyle.SideBySideButtonsAlert, actions: [ action])
         } else { */
-            pushControllerWithName("pedido", context: pedido)
+            pushControllerWithName("confirmar", context: pedido)
         //}
     }
 }

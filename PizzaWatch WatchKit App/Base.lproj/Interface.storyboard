@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Tam Controller-->
+        <!--tam-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="TamController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="tam" id="AgC-eL-Hgc" customClass="TamController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Tamaño" textAlignment="center" id="e6r-4l-7bs"/>
                         <picker height="100" alignment="left" id="wKF-4s-QHh">
@@ -19,7 +19,6 @@
                         <button width="1" height="20.5" alignment="left" title="Masa" id="tdq-xW-BJm">
                             <connections>
                                 <action selector="masa" destination="AgC-eL-Hgc" id="Fhl-0R-uDA"/>
-                                <segue destination="5ol-CX-fPA" kind="push" id="Y4U-Td-vOE"/>
                             </connections>
                         </button>
                     </items>
@@ -30,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="384" y="420"/>
         </scene>
-        <!--Masa Controller-->
+        <!--masa-->
         <scene sceneID="zd1-sP-3KM">
             <objects>
-                <controller id="5ol-CX-fPA" customClass="MasaController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="masa" id="5ol-CX-fPA" customClass="MasaController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Masa" textAlignment="center" id="WaW-vz-zQf"/>
                         <picker height="100" alignment="left" id="VkX-zT-LvX">
@@ -44,7 +43,6 @@
                         <button width="1" height="20.5" alignment="left" title="Queso" id="qP5-5A-Gzh">
                             <connections>
                                 <action selector="queso" destination="5ol-CX-fPA" id="gwI-Fo-MQa"/>
-                                <segue destination="E5u-fV-3QX" kind="push" id="R4j-wh-yTn"/>
                             </connections>
                         </button>
                     </items>
@@ -65,7 +63,6 @@
                         <button width="1" height="20.5" alignment="left" title="Iniciar" id="VDu-Uo-eo3">
                             <connections>
                                 <action selector="IniciarPedido" destination="rBK-m0-JUq" id="FQC-9Y-eca"/>
-                                <segue destination="AgC-eL-Hgc" kind="push" id="Eic-oD-Q5R"/>
                             </connections>
                         </button>
                     </items>
@@ -73,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="133" y="420"/>
         </scene>
-        <!--Queso Controller-->
+        <!--queso-->
         <scene sceneID="2Tq-Q1-sbP">
             <objects>
-                <controller id="E5u-fV-3QX" customClass="QuesoController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="queso" id="E5u-fV-3QX" customClass="QuesoController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Queso" textAlignment="center" id="D1z-mK-lFP"/>
                         <picker height="100" alignment="left" id="gSB-Is-h3g">
@@ -87,7 +84,6 @@
                         <button width="1" height="20.5" alignment="left" title="Ingredientes" id="M58-jE-ink">
                             <connections>
                                 <action selector="ingredientes" destination="E5u-fV-3QX" id="ohO-C1-qw3"/>
-                                <segue destination="ZGy-Mm-Auh" kind="push" id="LWR-n7-znv"/>
                             </connections>
                         </button>
                     </items>
@@ -98,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="612" y="693"/>
         </scene>
-        <!--Confirmar Controller-->
+        <!--confirmar-->
         <scene sceneID="PTf-BJ-6F8">
             <objects>
-                <controller id="Chs-jX-PQM" customClass="ConfirmarController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="confirmar" id="Chs-jX-PQM" customClass="ConfirmarController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Confirmar Pedido" textAlignment="center" id="QsG-ZB-94s"/>
                         <group width="1" alignment="left" id="g4c-Mx-Enf">
@@ -144,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="133" y="692.5"/>
         </scene>
-        <!--Ingredientes Controller-->
+        <!--ingredientes-->
         <scene sceneID="tSs-OO-Bj3">
             <objects>
-                <controller id="ZGy-Mm-Auh" customClass="IngredientesController" customModule="PizzaWatch_WatchKit_Extension">
+                <controller identifier="ingredientes" id="ZGy-Mm-Auh" customClass="IngredientesController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Ingredientes" textAlignment="center" id="3mP-D0-E2L"/>
                         <switch width="1" alignment="left" title="Jamón" id="BGe-1Q-hIu">
@@ -183,7 +179,6 @@
                         <button width="1" height="20.5" alignment="left" title="Validar" id="qJf-VY-lwu">
                             <connections>
                                 <action selector="validar" destination="ZGy-Mm-Auh" id="Akb-Js-OUY"/>
-                                <segue destination="Chs-jX-PQM" kind="push" id="8vi-VA-xSv"/>
                             </connections>
                         </button>
                     </items>
@@ -206,7 +201,11 @@
                 <controller id="UQu-f9-b9M" customClass="VolverController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Confirmado" textAlignment="center" id="vYm-6M-hcq"/>
-                        <button width="1" alignment="center" verticalAlignment="center" title="Volver" id="wdn-oH-xTe"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Volver" id="wdn-oH-xTe">
+                            <connections>
+                                <segue destination="rBK-m0-JUq" kind="push" id="XUK-JR-Pzs"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>

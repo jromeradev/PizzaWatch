@@ -27,8 +27,4 @@ class VolverController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    @IBAction func IniciarPedido() {
-        let pedido:Pedido=Pedido()
-        pushControllerWithName("pedido", context: pedido)
-    }
 }
