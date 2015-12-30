@@ -42,7 +42,7 @@ class IngredientesController: WKInterfaceController {
     
     
     func comprobarConfirmar(){
-        confirmar.setEnabled(ingredienteSeleccionados != 0)
+        confirmar.setEnabled(ingredienteSeleccionados != 0 && ingredienteSeleccionados < 6)
     }
 
     
